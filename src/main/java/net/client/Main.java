@@ -17,13 +17,13 @@ public class Main {
         ) {
             Scanner scanner = new Scanner(System.in);
             String message;
+            System.out.println("Введите своё имя или close для выключения сервера: ");
+            message = scanner.nextLine();
+            writer.write(message);
+            writer.newLine();
+            writer.flush();
+            System.out.println("server: " + reader.readLine());
 
-            while (!(message = scanner.nextLine()).isEmpty()) {
-                writer.write(message);
-                writer.newLine();
-                writer.flush();
-                System.out.println("server: " + reader.readLine());
-            }
         } catch (Exception e) {
             e.printStackTrace();
         }

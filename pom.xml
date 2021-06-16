@@ -49,42 +49,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
             </plugin>
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-shade-plugin</artifactId>-->
-            <!--                <version>3.2.1</version>-->
-            <!--                <executions>-->
-            <!--                    <execution>-->
-            <!--                        <id>fat-jar</id>-->
-            <!--                        &lt;!&ndash;                        <id>jar</id>&ndash;&gt;-->
-            <!--                        <phase>package</phase>-->
-            <!--                        <goals>-->
-            <!--                            <goal>shade</goal>-->
-            <!--                        </goals>-->
-            <!--                    </execution>-->
-            <!--                </executions>-->
-            <!--                <configuration>-->
-            <!--                    <filters>-->
-            <!--                        <filter>-->
-            <!--                            <artifact>*:*</artifact>-->
-            <!--                            <excludes>-->
-            <!--                                <exclude>META-INF/*.SF</exclude>-->
-            <!--                                <exclude>META-INF/*.DSA</exclude>-->
-            <!--                                <exclude>META-INF/*.RSA</exclude>-->
-            <!--                            </excludes>-->
-            <!--                        </filter>-->
-            <!--                    </filters>-->
-            <!--                    <transformers>-->
-            <!--                        <transformer-->
-            <!--                                implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer"/>-->
-            <!--                        <transformer-->
-            <!--                                implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">-->
-            <!--                            <mainClass>Main</mainClass>-->
-            <!--                        </transformer>-->
-            <!--                    </transformers>-->
 
-            <!--                </configuration>-->
-            <!--            </plugin>-->
         </plugins>
     </build>
 
